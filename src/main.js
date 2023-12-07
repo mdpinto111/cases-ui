@@ -110,7 +110,7 @@ const store = createStore({
 });
 
 const app = createApp(App);
-app.component("App", App);
+app.component({ App });
 app.use(store);
 app.use(createPinia());
 app.use(router);
